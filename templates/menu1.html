@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Menu</title>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		{% for food in foods %}
+			<ul>
+				<li>Food's name: {{ food.name }} </li>
+				<li>Food's price: {{ food.price }} </li>
+				<li>Food's description: {{ food.comment }} </li>
+				<li> Is spicy? {{ food.is_spicy }} </li>
+			</ul>
+		{% endfor %}
+	</body>
+</html>
+			
